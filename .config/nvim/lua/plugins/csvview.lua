@@ -20,4 +20,5 @@ return {
   },
   cmd = { "CsvViewEnable", "CsvViewDisable", "CsvViewToggle" },
   lazy = true,
+  enabled = false,
 }

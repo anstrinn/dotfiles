@@ -5,7 +5,7 @@ return {
       "bashls",
       -- "clangd",
       -- "dockerls",
-      -- "efm",
+      "efm",
       -- "emmet_ls",
       -- "eslint",
       "gofumpt",
