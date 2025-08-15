@@ -30,9 +30,9 @@ local config = function()
 
   -- Nix
   lspconfig.nil_ls.setup({
-  cmd = { "nil" },
+    cmd = { "nil" },
     filetypes = { "nix" },
-    root_markers = { "flake.nix", ".git" }
+    root_markers = { "flake.nix", ".git" },
   })
 
   -- json
@@ -64,7 +64,8 @@ local config = function()
       "go",
       "gomod",
       "gowork",
-      "gotmpl" }
+      "gotmpl",
+    },
   })
 
   -- typescript

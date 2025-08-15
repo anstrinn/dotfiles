@@ -13,6 +13,10 @@ local config = function()
       shade = "dark",
       percentage = 0.15, -- percentage of the shade to apply to the inactive window
     },
+    float = {
+      transparent = false, -- enable transparent floating windows
+      solid = false, -- use solid styling for floating windows, see |winborder|
+    },
     no_italic = false, -- Force no italic
     no_bold = false, -- Force no bold
     no_underline = false, -- Force no underline
@@ -94,11 +98,11 @@ local config = function()
       },
     },
     custom_highlights = function(colors)
-        return {
-            LineNr = { fg = "#393939" },
-            CursorLineNr = { fg = "#bac2de", bold = true },
-        }
-    end
+      return {
+        LineNr = { fg = "#393939" },
+        CursorLineNr = { fg = colors.subtext1, bold = true },
+      }
+    end,
   })
 end
 
@@ -110,27 +114,31 @@ return {
   config = config,
   opts = {
     integrations = {
-      aerial = true,
-      alpha = true,
-      cmp = true,
-      nvim_surround = true,
-      dashboard = true,
-      flash = true,
-      fzf = true,
-      grug_far = true,
-      gitsigns = true,
-      headlines = true,
-      illuminate = true,
+      blink_cmp = {
+        style = "bordered",
+      },
+      cmp = false,
+      dashboard = false,
+      flash = false,
+      fzf = false,
+      gitsigns = false,
+      grug_far = false,
+      illuminate = false,
+      neogit = false,
+      dap = false,
+      dap_ui = false,
+      nvimtree = false,
+      ufo = false,
       indent_blankline = {
-        enabled = true,
+        enabled = false,
         scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
         colored_indent_levels = false,
       },
-      leap = true,
-      lsp_trouble = true,
-      mason = true,
-      markdown = true,
-      render_markdown = true,
+      leap = false,
+      lsp_trouble = false,
+      markdown = false,
+      mason = false,
+      render_markdown = false,
       mini = {
         enabled = false,
         indentscope_color = "",
@@ -155,28 +163,27 @@ return {
           background = true,
         },
       },
-      navic = { enabled = true, custom_bg = "lualine" },
-      neotest = true,
-      neotree = true,
-      noice = true,
-      notify = true,
-      semantic_tokens = true,
-      snacks = true,
-      telescope = true,
+      neotree = false,
+      noice = false,
+      semantic_tokens = false,
+      snacks = false,
+      telescope = false,
       treesitter = true,
       treesitter_context = true,
-      which_key = true,
+      which_key = false,
+      rainbow_delimiters = false,
     },
   },
   specs = {
-    {
-      "akinsho/bufferline.nvim",
-      optional = true,
-      opts = function(_, opts)
-        if (vim.g.colors_name or ""):find("catppuccin") then
-          opts.highlights = require("catppuccin.groups.integrations.bufferline").get()
-        end
-      end,
-    },
+    -- {
+    --   "akinsho/bufferline.nvim",
+    --   optional = true,
+    --   opts = function(_, opts)
+    --     if (vim.g.colors_name or ""):find("catppuccin") then
+    --       opts.highlights = require("catppuccin.groups.integrations.bufferline").get()
+    --     end
+    --   end,
+    -- },
   },
+  compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
 }
