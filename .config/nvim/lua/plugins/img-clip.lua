@@ -6,7 +6,7 @@ return {
   "HakonHarnes/img-clip.nvim",
   cmd = { "PasteImage" },
   ft = { "markdown" },
-  enabled = true,
+  enabled = false,
   lazy = true,
   opts = {
     default = {
