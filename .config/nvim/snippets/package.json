@@ -6,6 +6,12 @@
           "sh"
         ],
         "path": "./sh.json"
+      },
+      {
+        "language": [
+          "c"
+        ],
+        "path": "./c.json"
       }
     ]
   },

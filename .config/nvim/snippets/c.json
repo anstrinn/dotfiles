@@ -1,0 +1,13 @@
+{
+  "base.c": {
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main() {",
+      "  printf(\"Print\");",
+      "  return 0;",
+      "}"
+    ],
+    "prefix": "base.c"
+  }
+}
