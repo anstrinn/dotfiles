@@ -3,14 +3,14 @@ return {
   opts = {
     ensure_installed = {
       "bashls",
-      -- "clangd",
+      "clang-format",
       -- "dockerls",
       "efm",
       -- "emmet_ls",
       -- "eslint",
-      "gofumpt",
-      "goimports",
-      "gopls",
+      -- "gofumpt",
+      -- "goimports",
+      -- "gopls",
       -- "jsonls",
       -- "lua_ls",
       -- "markdown_oxide",

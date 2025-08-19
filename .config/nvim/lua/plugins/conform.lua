@@ -15,6 +15,7 @@ return {
       },
       formatters_by_ft = {
         bash = { "shfmt" },
+        c = { "clang-format" },
         css = { "prettier" },
         html = { "prettier" },
         javascript = { "prettier" },

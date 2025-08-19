@@ -4,11 +4,8 @@
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.inc-rename",
-    "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.nix",
-    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.mini-hipatterns"

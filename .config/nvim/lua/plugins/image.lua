@@ -6,6 +6,7 @@ return {
   {
     "vhyrro/luarocks.nvim",
     priority = 1001,
+    enabled = false,
     opts = {
       rocks = { "magick" },
     },
