@@ -23,6 +23,10 @@ keymap.set("n", "<leader>cx", ":!chmod +x %<cr>", { desc = "Make Executable" })
 keymap.set("v", "<leader>ss", ":s/", { desc = "Make Executable" })
 keymap.set("n", "<leader>ss", ":%s/", { desc = "Make Executable" })
 
+-- Sort
+
+keymap.set("v", "<leader>sS", ":!sort<CR>", { desc = "Sort" })
+
 -- Managing lines
 
 keymap.set("i", "<Tab>", "<C-o>>>", { noremap = true, silent = true })
