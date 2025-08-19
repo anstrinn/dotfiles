@@ -20,8 +20,8 @@ keymap.set("n", "<leader>cx", ":!chmod +x %<cr>", { desc = "Make Executable" })
 
 -- Search and Replace
 
-keymap.set("v", "<leader>ss", ":s/", { desc = "Make Executable" })
-keymap.set("n", "<leader>ss", ":%s/", { desc = "Make Executable" })
+keymap.set("v", "<leader>ss", ":s/", { desc = "Search & Replace" })
+keymap.set("n", "<leader>ss", ":%s/", { desc = "Search & Replace" })
 
 -- Sort
 
